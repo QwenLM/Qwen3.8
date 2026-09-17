@@ -139,6 +139,12 @@ Look for models ending with GGUF on Hugging Face Hub.
 
 If you are running on Apple Silicon, both [`mlx-lm`](https://github.com/ml-explore/mlx-lm) (text-only) and [`mlx-vlm`](https://github.com/Blaizzy/mlx-vlm) (vision + text) support the Qwen3.5 open model series. Look for models ending with MLX on Hugging Face Hub.
 
+#### MTPLX (Apple Silicon)
+
+[MTPLX](https://github.com/youssofal/MTPLX) runs Qwen3.8 on Apple Silicon with the model's own multi-token prediction heads: it drafts several tokens per step, verifies them against the model in one batched pass, and keeps the output distribution identical to plain decoding at any temperature. Qwen3.8-27B decodes at up to 87.6 tokens per second on an M5 Max ([benchmarks with logs](https://mtplx.com/benchmarks/)).
+Install with `brew install youssofal/mtplx/mtplx` or the Mac app from [mtplx.com](https://mtplx.com), then run `mtplx start`. The server is OpenAI and Anthropic compatible.
+Ready-made packs: [Qwen3.8-27B-MTPLX-Optimized-Speed](https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Speed) and [Qwen3.8-27B-MTPLX-Optimized-Quality](https://huggingface.co/Youssofal/Qwen3.8-27B-MTPLX-Optimized-Quality).
+
 #### Unsloth
 
 [Unsloth](https://unsloth.ai) contains a local UI to run and train LLMs and diffusion models, including Qwen3.8 and more.
