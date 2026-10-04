@@ -160,7 +160,7 @@ sglang serve --model-path Qwen/Qwen3.8-27B --port 8000 --tp-size 4 --context-len
 
 An OpenAI-compatible API will be available at `http://localhost:8000/v1`.
 
-Also see SGLang Cookbook on [serving Qwen3.8](https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8).
+Also see SGLang Cookbook on [serving Qwen3.8-27B](https://docs.sglang.io/cookbook/autoregressive/Qwen/Qwen3.8-27B).
 
 #### vLLM
 
@@ -173,7 +173,7 @@ vllm serve Qwen/Qwen3.8-27B --port 8000 --tensor-parallel-size 4 --max-model-len
 
 An OpenAI-compatible API will be available at `http://localhost:8000/v1`.
 
-Also see vLLM Recipes on [serving Qwen3.8](https://recipes.vllm.ai/Qwen).
+Also see vLLM Recipes on [serving Qwen3.8-27B](https://recipes.vllm.ai/Qwen/Qwen3.8-27B).
 
 #### TokenSpeed
 
@@ -186,7 +186,7 @@ tokenspeed serve Qwen/Qwen3.8-27B --port 8000 --tensor-parallel-size 4 --max-mod
 
 An OpenAI-compatible API will be available at `http://localhost:8000/v1`.
 
-Also see TokenSpeed Recipes on [serving Qwen3.8](https://lightseek.org/tokenspeed/recipes/models#qwen3-8).
+Also see TokenSpeed Recipes on [serving Qwen3.8-27B](https://lightseek.org/tokenspeed/recipes/models#qwen3-8-27b).
 
 ### Finetuning
 
